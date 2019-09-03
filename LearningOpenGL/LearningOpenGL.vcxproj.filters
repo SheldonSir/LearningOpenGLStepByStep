@@ -13,10 +13,16 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="ShaderMgr">
-      <UniqueIdentifier>{1646b447-58cf-4e2f-b6c2-35f81a0ba1b1}</UniqueIdentifier>
+    <Filter Include="Externs">
+      <UniqueIdentifier>{17aa48f2-be6f-45e3-a9d2-6303da4d1bb9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Shader">
+    <Filter Include="资源文件\resource">
+      <UniqueIdentifier>{4616eb89-69aa-4610-b567-6a88ee62aab7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\resource\texture">
+      <UniqueIdentifier>{6ed38f73-289e-404c-95f8-547883fc0ae1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\resource\shader">
       <UniqueIdentifier>{588255bf-d9e6-42d6-b32b-40c186875f39}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -39,6 +45,9 @@
     <ClCompile Include="Learning_0830.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Learning_0902.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ShaderMgr.h">
@@ -47,6 +56,9 @@
     <ClInclude Include="resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="externs\stb_image.h">
+      <Filter>Externs</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="LearningOpenGL.rc">
@@ -54,20 +66,31 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Triangle.frag">
-      <Filter>Shader</Filter>
+    <Image Include="resource\texture\wall.jpg">
+      <Filter>资源文件\resource\texture</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\shader\Learning_0902_Texture.frag">
+      <Filter>资源文件\resource\shader</Filter>
     </None>
-    <None Include="Triangle.vert">
-      <Filter>Shader</Filter>
+    <None Include="resource\shader\Learning_0902_Texture.vert">
+      <Filter>资源文件\resource\shader</Filter>
     </None>
-    <None Include="Triangle_Yellow.frag">
-      <Filter>Shader</Filter>
+    <None Include="resource\shader\Triangle.frag">
+      <Filter>资源文件\resource\shader</Filter>
     </None>
-    <None Include="Triangle_Out_Pos.vert">
-      <Filter>Shader</Filter>
+    <None Include="resource\shader\Triangle.vert">
+      <Filter>资源文件\resource\shader</Filter>
     </None>
-    <None Include="Triangle_Out_Pos.frag">
-      <Filter>Shader</Filter>
+    <None Include="resource\shader\Triangle_Out_Pos.frag">
+      <Filter>资源文件\resource\shader</Filter>
+    </None>
+    <None Include="resource\shader\Triangle_Out_Pos.vert">
+      <Filter>资源文件\resource\shader</Filter>
+    </None>
+    <None Include="resource\shader\Triangle_Yellow.frag">
+      <Filter>资源文件\resource\shader</Filter>
     </None>
   </ItemGroup>
 </Project>

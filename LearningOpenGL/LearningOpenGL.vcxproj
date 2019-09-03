@@ -88,10 +88,10 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;STB_IMAGE_IMPLEMENTATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>E:\Sheldon\source\library\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\Sheldon\source\library\include;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -159,9 +159,11 @@
     <ClCompile Include="Learning_0822.cpp" />
     <ClCompile Include="Learning_0827.cpp" />
     <ClCompile Include="Learning_0830.cpp" />
+    <ClCompile Include="Learning_0902.cpp" />
     <ClCompile Include="ShaderMgr.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="externs\stb_image.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="ShaderMgr.h" />
   </ItemGroup>
@@ -169,11 +171,16 @@
     <ResourceCompile Include="LearningOpenGL.rc" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Triangle.vert" />
-    <None Include="Triangle.frag" />
-    <None Include="Triangle_Out_Pos.frag" />
-    <None Include="Triangle_Out_Pos.vert" />
-    <None Include="Triangle_Yellow.frag" />
+    <Image Include="resource\texture\wall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\shader\Learning_0902_Texture.frag" />
+    <None Include="resource\shader\Learning_0902_Texture.vert" />
+    <None Include="resource\shader\Triangle.frag" />
+    <None Include="resource\shader\Triangle.vert" />
+    <None Include="resource\shader\Triangle_Out_Pos.frag" />
+    <None Include="resource\shader\Triangle_Out_Pos.vert" />
+    <None Include="resource\shader\Triangle_Yellow.frag" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
