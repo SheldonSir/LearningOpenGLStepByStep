@@ -1,0 +1,9 @@
+.vs/
+Debug/
+GladOutLibrary/Debug/
+LearningOpenGL/Debug/
+ReleaseQuantumCloudAI/Debug/
+
+GladOutLibrary/Release/
+LearningOpenGL/Release/
+ReleaseQuantumCloudAI/Release/
