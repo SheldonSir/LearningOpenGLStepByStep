@@ -28,7 +28,7 @@ Shader::Shader(const char* vertexShader, const char* fragmentShader)
 	}
 	catch (std::ifstream::failure e)
 	{
-		std::cout << "Error::Shader::File not succesfully read" << std::endl;
+		std::cout <<__LINE__ << " Error::Shader::File not succesfully read \t" << e.what()<<std::endl;
 	}
 
 	const char* pVertexCode = vertexCode.c_str();

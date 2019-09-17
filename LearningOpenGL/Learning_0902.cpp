@@ -1,3 +1,4 @@
+#if 0
 #include<glad/glad.h>
 #include<GLFW/glfw3.h>
 #include<iostream>
@@ -75,12 +76,13 @@ int main()
 
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-	stbi_set_flip_vertically_on_load(true);
+
 	int t_w, t_h, t_channels;
-	unsigned char* p_data = stbi_load("E:/Sheldon/source/repos/SheldonSolution/LearningOpenGL/resource/texture/wall.jpg", &t_w, &t_h, &t_channels, 0);
+	//stbi_set_flip_vertically_on_load(true);
+	unsigned char* p_data = stbi_load("E:/Sheldon/source/repos/SheldonSolution/Debug/wall.jpg", &t_w, &t_h, &t_channels, 0);
 	if (nullptr != p_data)
 	{
-		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, t_w, t_h, t_channels, GL_RGB, GL_UNSIGNED_BYTE, p_data);
+		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, t_w, t_h, 0, GL_RGB, GL_UNSIGNED_BYTE, p_data);
 		glGenerateMipmap(GL_TEXTURE_2D);
 	}
 	else
@@ -89,6 +91,11 @@ int main()
 	}
 
 	stbi_image_free(p_data);
+
+	glBindTexture(GL_TEXTURE_2D, 0);
+	glBindBuffer(GL_ARRAY_BUFFER, 0);
+	//glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
+	glBindVertexArray(0);
 
 	auto LamdaProcessInput = [](GLFWwindow* window)
 	{
@@ -104,11 +111,12 @@ int main()
 
 		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
-		m_TinyShader.UseProgram();
+		
 
-		glActiveTexture(GL_TEXTURE0);
+		//glActiveTexture(GL_TEXTURE0);
 		glBindTexture(GL_TEXTURE_2D, texture);
 
+		m_TinyShader.UseProgram();
 		
 		glBindVertexArray(vao);
 		//glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
@@ -129,3 +137,4 @@ int main()
 
 	return 0;
 }
+#endif

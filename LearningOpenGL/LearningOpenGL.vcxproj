@@ -99,6 +99,10 @@
       <AdditionalLibraryDirectories>E:\Sheldon\source\library\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>opengl32.lib;glfw3.lib;glad.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -160,10 +164,13 @@
     <ClCompile Include="Learning_0827.cpp" />
     <ClCompile Include="Learning_0830.cpp" />
     <ClCompile Include="Learning_0902.cpp" />
+    <ClCompile Include="Learning_0909.cpp" />
+    <ClCompile Include="Learning_0910.cpp" />
+    <ClCompile Include="Learning_0912.cpp" />
     <ClCompile Include="ShaderMgr.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="externs\stb_image.h" />
+    <ClInclude Include="Include\stb_image.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="ShaderMgr.h" />
   </ItemGroup>
@@ -176,6 +183,8 @@
   <ItemGroup>
     <None Include="resource\shader\Learning_0902_Texture.frag" />
     <None Include="resource\shader\Learning_0902_Texture.vert" />
+    <None Include="resource\shader\Learning_0910_Texture.frag" />
+    <None Include="resource\shader\Learning_0910_Texture_Question4.frag" />
     <None Include="resource\shader\Triangle.frag" />
     <None Include="resource\shader\Triangle.vert" />
     <None Include="resource\shader\Triangle_Out_Pos.frag" />

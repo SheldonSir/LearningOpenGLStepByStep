@@ -13,9 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Externs">
-      <UniqueIdentifier>{17aa48f2-be6f-45e3-a9d2-6303da4d1bb9}</UniqueIdentifier>
-    </Filter>
     <Filter Include="资源文件\resource">
       <UniqueIdentifier>{4616eb89-69aa-4610-b567-6a88ee62aab7}</UniqueIdentifier>
     </Filter>
@@ -24,6 +21,9 @@
     </Filter>
     <Filter Include="资源文件\resource\shader">
       <UniqueIdentifier>{588255bf-d9e6-42d6-b32b-40c186875f39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{17aa48f2-be6f-45e3-a9d2-6303da4d1bb9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -48,6 +48,15 @@
     <ClCompile Include="Learning_0902.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Learning_0909.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Learning_0910.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Learning_0912.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ShaderMgr.h">
@@ -56,8 +65,8 @@
     <ClInclude Include="resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="externs\stb_image.h">
-      <Filter>Externs</Filter>
+    <ClInclude Include="Include\stb_image.h">
+      <Filter>Include</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -90,6 +99,12 @@
       <Filter>资源文件\resource\shader</Filter>
     </None>
     <None Include="resource\shader\Triangle_Yellow.frag">
+      <Filter>资源文件\resource\shader</Filter>
+    </None>
+    <None Include="resource\shader\Learning_0910_Texture.frag">
+      <Filter>资源文件\resource\shader</Filter>
+    </None>
+    <None Include="resource\shader\Learning_0910_Texture_Question4.frag">
       <Filter>资源文件\resource\shader</Filter>
     </None>
   </ItemGroup>

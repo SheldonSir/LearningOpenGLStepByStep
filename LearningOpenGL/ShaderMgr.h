@@ -12,30 +12,30 @@ public:
 	void UseProgram();
 	
 	template<class Type>
-	void SetUniform(const GLchar* key, Type& value) const
+	void SetUniform(const GLchar* key, const Type& value) const
 	{
 		std::cout << __LINE__ << " : Not implement!!!" << std::endl;
 	}
 	template<>
-	void SetUniform(const GLchar* name, int& value) const
+	void SetUniform(const GLchar* name, const int& value) const
 	{
 		glUniform1i(glGetUniformLocation(m_ShaderId, name), value);
 	}
 
 	template<>
-	void SetUniform(const GLchar* name, bool& value) const
+	void SetUniform(const GLchar* name, const bool& value) const
 	{
 		glUniform1i(glGetUniformLocation(m_ShaderId, name), value);
 	}
 
 	template<>
-	void SetUniform(const GLchar* name, float& value) const
+	void SetUniform(const GLchar* name, const float& value) const
 	{
 		glUniform1f(glGetUniformLocation(m_ShaderId, name), value);
 	}
 
 	template<class T>
-	void SetUniform(const GLchar* name, std::vector<T>& value) const
+	void SetUniform(const GLchar* name, const std::vector<T>& value) const
 	{
 
 	}
