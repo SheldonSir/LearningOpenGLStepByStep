@@ -46,7 +46,7 @@ public:
 	}
 
 
-private:
+public:
 	unsigned int m_ShaderId = 0;
 };
 

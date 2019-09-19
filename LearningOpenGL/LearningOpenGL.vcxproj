@@ -167,6 +167,7 @@
     <ClCompile Include="Learning_0909.cpp" />
     <ClCompile Include="Learning_0910.cpp" />
     <ClCompile Include="Learning_0912.cpp" />
+    <ClCompile Include="Learning_0917.cpp" />
     <ClCompile Include="ShaderMgr.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -178,6 +179,7 @@
     <ResourceCompile Include="LearningOpenGL.rc" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="resource\texture\awesomeface.png" />
     <Image Include="resource\texture\wall.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -185,6 +187,8 @@
     <None Include="resource\shader\Learning_0902_Texture.vert" />
     <None Include="resource\shader\Learning_0910_Texture.frag" />
     <None Include="resource\shader\Learning_0910_Texture_Question4.frag" />
+    <None Include="resource\shader\Learning_0917_Texture_Transform.frag" />
+    <None Include="resource\shader\Learning_0917_Texture_Transform.vert" />
     <None Include="resource\shader\Triangle.frag" />
     <None Include="resource\shader\Triangle.vert" />
     <None Include="resource\shader\Triangle_Out_Pos.frag" />

@@ -57,6 +57,9 @@
     <ClCompile Include="Learning_0912.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Learning_0917.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ShaderMgr.h">
@@ -76,6 +79,9 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="resource\texture\wall.jpg">
+      <Filter>资源文件\resource\texture</Filter>
+    </Image>
+    <Image Include="resource\texture\awesomeface.png">
       <Filter>资源文件\resource\texture</Filter>
     </Image>
   </ItemGroup>
@@ -105,6 +111,12 @@
       <Filter>资源文件\resource\shader</Filter>
     </None>
     <None Include="resource\shader\Learning_0910_Texture_Question4.frag">
+      <Filter>资源文件\resource\shader</Filter>
+    </None>
+    <None Include="resource\shader\Learning_0917_Texture_Transform.frag">
+      <Filter>资源文件\resource\shader</Filter>
+    </None>
+    <None Include="resource\shader\Learning_0917_Texture_Transform.vert">
       <Filter>资源文件\resource\shader</Filter>
     </None>
   </ItemGroup>

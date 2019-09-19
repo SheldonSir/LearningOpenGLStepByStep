@@ -1,3 +1,4 @@
+#if 0
 #include "Include/glm/glm/glm.hpp"
 #include "Include/glm/glm/gtc/matrix_transform.hpp"
 #include "Include/glm/glm/gtc/type_ptr.hpp"
@@ -22,3 +23,4 @@ int main()
 	std::cout << vec.x << ", " << vec.y << ", " << vec.z <<", "<< vec.w << std::endl;
 	return 0;
 }
+#endif
