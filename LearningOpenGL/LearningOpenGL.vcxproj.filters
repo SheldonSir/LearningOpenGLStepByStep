@@ -60,6 +60,27 @@
     <ClCompile Include="Learning_0917.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Learning_0920.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Learning_0925.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Learning_1015.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Learning_1023.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Learning_1028.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Learning_1105.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ShaderMgr.h">
@@ -70,6 +91,9 @@
     </ClInclude>
     <ClInclude Include="Include\stb_image.h">
       <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -119,5 +143,33 @@
     <None Include="resource\shader\Learning_0917_Texture_Transform.vert">
       <Filter>资源文件\resource\shader</Filter>
     </None>
+    <None Include="resource\shader\6.2.coordinate_systems.frag">
+      <Filter>资源文件\resource\shader</Filter>
+    </None>
+    <None Include="resource\shader\6.2.coordinate_systems.vert">
+      <Filter>资源文件\resource\shader</Filter>
+    </None>
+    <None Include="resource\shader\camera_1015.frag">
+      <Filter>资源文件\resource\shader</Filter>
+    </None>
+    <None Include="resource\shader\camera_1015.vert">
+      <Filter>资源文件\resource\shader</Filter>
+    </None>
+    <None Include="resource\shader\1023_light.frag">
+      <Filter>资源文件\resource\shader</Filter>
+    </None>
+    <None Include="resource\shader\1023_light.vert">
+      <Filter>资源文件\resource\shader</Filter>
+    </None>
+    <None Include="resource\shader\1023_pawn.vert">
+      <Filter>资源文件\resource\shader</Filter>
+    </None>
+    <None Include="resource\shader\1023_pawn.frag">
+      <Filter>资源文件\resource\shader</Filter>
+    </None>
+    <None Include="resource\shader\1028_light.frag" />
+    <None Include="resource\shader\1028_light.vert" />
+    <None Include="resource\shader\1028_pawn.frag" />
+    <None Include="resource\shader\1028_pawn.vert" />
   </ItemGroup>
 </Project>

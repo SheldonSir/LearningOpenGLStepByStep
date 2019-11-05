@@ -1,4 +1,4 @@
-#if 1
+#if 0
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <iostream>
@@ -152,7 +152,7 @@ int main()
 		transform = glm::mat4(1.0f); // reset it to identity matrix
 		transform = glm::translate(transform, glm::vec3(-0.5f, 0.5f, 0.0f));
 		float scaleAmount = sin(glfwGetTime());
-		transform = glm::scale(transform, glm::vec3(scaleAmount, scaleAmount, scaleAmount));
+		transform = glm::scale(transform, glm::vec3(scaleAmount, scaleAmount, scaleAmount)); //三轴同步缩放
 		glUniformMatrix4fv(transformLoc, 1, GL_FALSE, &transform[0][0]);
 
 		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
